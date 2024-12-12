@@ -2,7 +2,7 @@
 name: DevOpsLab Pipeline
 
 # Evento que irá acionar a pipeline
-on: 
+on:
   push:
     branches:
       - main
@@ -21,6 +21,6 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask
-              
+
       - name: Unit Test
         run: python -m unittest -v test
